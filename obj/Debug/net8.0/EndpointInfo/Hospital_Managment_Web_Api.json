@@ -1,0 +1,1736 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Hospital_Managment_Web_Api",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/ClientRegistration": {
+      "get": {
+        "tags": [
+          "ClientRegistration"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ClientRegistration"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Client_Registration_Model"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Client_Registration_Model"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Client_Registration_Model"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ClientRegistration"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ClientRegistration/GetById": {
+      "get": {
+        "tags": [
+          "ClientRegistration"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ClientRegistration/GetByName": {
+      "get": {
+        "tags": [
+          "ClientRegistration"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DepartmentInformation": {
+      "get": {
+        "tags": [
+          "DepartmentInformation"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/SqlConnection"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SqlConnection"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SqlConnection"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DepartmentInformation"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DepartmentInformation"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Department_Information_Model"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Department_Information_Model"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Department_Information_Model"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DepartmentInformation/GetAllData": {
+      "get": {
+        "tags": [
+          "DepartmentInformation"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DepartmentInformation/GetById": {
+      "get": {
+        "tags": [
+          "DepartmentInformation"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DepartmentInformation/GetByName": {
+      "get": {
+        "tags": [
+          "DepartmentInformation"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DesignationInformation": {
+      "delete": {
+        "tags": [
+          "DesignationInformation"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DesignationInformation"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Designation_Information_Model"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Designation_Information_Model"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Designation_Information_Model"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DesignationInformation/GetByName": {
+      "get": {
+        "tags": [
+          "DesignationInformation"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DesignationInformation/GetAllData": {
+      "get": {
+        "tags": [
+          "DesignationInformation"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DesignationInformation/GetById": {
+      "get": {
+        "tags": [
+          "DesignationInformation"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/EmployeeInformation": {
+      "get": {
+        "tags": [
+          "EmployeeInformation"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "EmployeeInformation"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Employee_Information_Model"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Employee_Information_Model"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Employee_Information_Model"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "EmployeeInformation"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HospitalInformation": {
+      "get": {
+        "tags": [
+          "HospitalInformation"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "HospitalInformation"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Hospital_Information_Model"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Hospital_Information_Model"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Hospital_Information_Model"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "HospitalInformation"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ItemInformation": {
+      "get": {
+        "tags": [
+          "ItemInformation"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ItemInformation"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Item_Information_Model"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Item_Information_Model"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Item_Information_Model"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/MaterialTypeInfromation/GetAllData": {
+      "get": {
+        "tags": [
+          "MaterialTypeInfromation"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/MaterialTypeInfromation": {
+      "post": {
+        "tags": [
+          "MaterialTypeInfromation"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Material_Type_Infromation_Model"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Material_Type_Infromation_Model"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Material_Type_Infromation_Model"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "MaterialTypeInfromation"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Packing": {
+      "get": {
+        "tags": [
+          "Packing"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Packing"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Packing_Model"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Packing_Model"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Packing_Model"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Packing"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/PersonInformation/GetAllData": {
+      "get": {
+        "tags": [
+          "PersonInformation"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/PersonInformation": {
+      "post": {
+        "tags": [
+          "PersonInformation"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Person_Information_Model"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Person_Information_Model"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Person_Information_Model"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "PersonInformation"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/UserLogin/GetAllData": {
+      "get": {
+        "tags": [
+          "UserLogin"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/UserLogin": {
+      "post": {
+        "tags": [
+          "UserLogin"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/User_Login_Information_Model"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/User_Login_Information_Model"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/User_Login_Information_Model"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "UserLogin"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Client_Registration_Model": {
+        "type": "object",
+        "properties": {
+          "client_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "client_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "client_global_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "client_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "client_address": {
+            "type": "string",
+            "nullable": true
+          },
+          "client_phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "client_city": {
+            "type": "string",
+            "nullable": true
+          },
+          "busniess_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "client_pan": {
+            "type": "string",
+            "nullable": true
+          },
+          "client_registration_no": {
+            "type": "string",
+            "nullable": true
+          },
+          "client_gst": {
+            "type": "string",
+            "nullable": true
+          },
+          "client_logo": {
+            "type": "string",
+            "nullable": true
+          },
+          "client_email": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "user_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "created_by": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "created_date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updated_date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "active_flag": {
+            "type": "string",
+            "nullable": true
+          },
+          "attr1": {
+            "type": "string",
+            "nullable": true
+          },
+          "attr2": {
+            "type": "string",
+            "nullable": true
+          },
+          "attr3": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ConnectionState": {
+        "enum": [
+          0,
+          1,
+          2,
+          4,
+          8,
+          16
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "Department_Information_Model": {
+        "type": "object",
+        "properties": {
+          "department_id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "department_start_date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "department_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "department_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "deparment_address": {
+            "type": "string",
+            "nullable": true
+          },
+          "deparment_description": {
+            "type": "string",
+            "nullable": true
+          },
+          "hospital_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "created_by": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "created_date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updated_date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updated_by": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Designation_Information_Model": {
+        "type": "object",
+        "properties": {
+          "designation_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "designation_code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "designation_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "designation_qualification": {
+            "type": "string",
+            "nullable": true
+          },
+          "designation_description": {
+            "type": "string",
+            "nullable": true
+          },
+          "created_date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updated_date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "created_by": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "updated_by": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ac_flag": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Employee_Information_Model": {
+        "type": "object",
+        "properties": {
+          "employee_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "employee_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "employee_title": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "employee_gender": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "employee_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "employye_designation": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "employee_department": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "employee_dob": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "employee_joing_date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "employee_Address": {
+            "type": "string",
+            "nullable": true
+          },
+          "employee_Address1": {
+            "type": "string",
+            "nullable": true
+          },
+          "employee_city": {
+            "type": "string",
+            "nullable": true
+          },
+          "employee_pan": {
+            "type": "string",
+            "nullable": true
+          },
+          "employee_adharchard": {
+            "type": "string",
+            "nullable": true
+          },
+          "employee_alternet_no": {
+            "type": "string",
+            "nullable": true
+          },
+          "employee_mobile": {
+            "type": "string",
+            "nullable": true
+          },
+          "employee_email_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "employee_bank_name": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "employee_account_no": {
+            "type": "string",
+            "nullable": true
+          },
+          "employee_ifsc_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "employee_branch": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "employee_photo": {
+            "type": "string",
+            "nullable": true
+          },
+          "created_by": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "updated_by": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "created_date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updated_date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "active_flag": {
+            "type": "boolean"
+          },
+          "attr1": {
+            "type": "string",
+            "nullable": true
+          },
+          "attr2": {
+            "type": "string",
+            "nullable": true
+          },
+          "attr3": {
+            "type": "string",
+            "nullable": true
+          },
+          "attr4": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Hospital_Information_Model": {
+        "type": "object",
+        "properties": {
+          "hospital_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "hospital_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "hospital_address": {
+            "type": "string",
+            "nullable": true
+          },
+          "hospital_email_address": {
+            "type": "string",
+            "nullable": true
+          },
+          "logo": {
+            "type": "string",
+            "nullable": true
+          },
+          "hospital_city": {
+            "type": "string",
+            "nullable": true
+          },
+          "hospital_pan": {
+            "type": "string",
+            "nullable": true
+          },
+          "hospital_gst_number": {
+            "type": "string",
+            "nullable": true
+          },
+          "hospital_contact_number": {
+            "type": "string",
+            "nullable": true
+          },
+          "hospital_contact_number1": {
+            "type": "string",
+            "nullable": true
+          },
+          "hospital_web_site": {
+            "type": "string",
+            "nullable": true
+          },
+          "created_by": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "created_date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updated_by": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "updated_date": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "IComponent": {
+        "type": "object",
+        "properties": {
+          "site": {
+            "$ref": "#/components/schemas/ISite"
+          }
+        },
+        "additionalProperties": false
+      },
+      "IContainer": {
+        "type": "object",
+        "properties": {
+          "components": {
+            "type": "array",
+            "items": { },
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ISite": {
+        "type": "object",
+        "properties": {
+          "component": {
+            "$ref": "#/components/schemas/IComponent"
+          },
+          "container": {
+            "$ref": "#/components/schemas/IContainer"
+          },
+          "designMode": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Item_Information_Model": {
+        "type": "object",
+        "properties": {
+          "item_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "item_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "item_type": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "item_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "item_manufaction_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "item_pacinking": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "item_use_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "item_description": {
+            "type": "string",
+            "nullable": true
+          },
+          "item_start_date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "item_end_date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "item_first_unit": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "item_second_unit": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "item_conversion_first_factor": {
+            "type": "number",
+            "format": "double"
+          },
+          "item_conversion_second_factor": {
+            "type": "number",
+            "format": "double"
+          },
+          "item_is_stockebal": {
+            "type": "boolean"
+          },
+          "item_quality_check": {
+            "type": "boolean"
+          },
+          "item_return_policy": {
+            "type": "boolean"
+          },
+          "item_min_qty": {
+            "type": "number",
+            "format": "double"
+          },
+          "item_max_qty": {
+            "type": "number",
+            "format": "double"
+          },
+          "item_hsn_code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "item_po_type": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "item_tax_apply": {
+            "type": "boolean"
+          },
+          "item_po_tax_group": {
+            "type": "number",
+            "format": "double"
+          },
+          "item_sale_tax_group": {
+            "type": "number",
+            "format": "double"
+          },
+          "created_by": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "created_date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updated_by": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "updated_date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "activ_flag": {
+            "type": "boolean"
+          },
+          "attr1": {
+            "type": "string",
+            "nullable": true
+          },
+          "attr2": {
+            "type": "string",
+            "nullable": true
+          },
+          "attr3": {
+            "type": "string",
+            "nullable": true
+          },
+          "attr4": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "attr5": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "attr6": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Material_Type_Infromation_Model": {
+        "type": "object",
+        "properties": {
+          "material_type_id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "material_type": {
+            "type": "string",
+            "nullable": true
+          },
+          "global_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "created_by": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "created_date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updated_by": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "updated_date": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Packing_Model": {
+        "type": "object",
+        "properties": {
+          "packing_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "packing_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "first_packing_convert": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "second_packing_convert": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "attr1": {
+            "type": "string",
+            "nullable": true
+          },
+          "attr2": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Person_Information_Model": {
+        "type": "object",
+        "properties": {
+          "person_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "client_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "global_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "module_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "person_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "person_type": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "person_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "person_address": {
+            "type": "string",
+            "nullable": true
+          },
+          "person_email_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "person_contact_number": {
+            "type": "string",
+            "nullable": true
+          },
+          "person_bussness_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "person_office_number": {
+            "type": "string",
+            "nullable": true
+          },
+          "person_pan_card": {
+            "type": "string",
+            "nullable": true
+          },
+          "person_city": {
+            "type": "string",
+            "nullable": true
+          },
+          "person_bank_name": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "person_account_number": {
+            "type": "string",
+            "nullable": true
+          },
+          "person_gst_number": {
+            "type": "string",
+            "nullable": true
+          },
+          "payment_terms": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "created_by": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "created_date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updated_by": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "updated_date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "active_flag": {
+            "type": "string",
+            "nullable": true
+          },
+          "attr1": {
+            "type": "string",
+            "nullable": true
+          },
+          "attr2": {
+            "type": "string",
+            "nullable": true
+          },
+          "attr3": {
+            "type": "string",
+            "nullable": true
+          },
+          "attr4": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "attr5": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SecureString": {
+        "type": "object",
+        "properties": {
+          "length": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SqlConnection": {
+        "type": "object",
+        "properties": {
+          "site": {
+            "$ref": "#/components/schemas/ISite"
+          },
+          "container": {
+            "$ref": "#/components/schemas/IContainer"
+          },
+          "canCreateBatch": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "statisticsEnabled": {
+            "type": "boolean"
+          },
+          "connectionString": {
+            "type": "string",
+            "nullable": true
+          },
+          "connectionTimeout": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "accessToken": {
+            "type": "string",
+            "nullable": true
+          },
+          "database": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "dataSource": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "packetSize": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "clientConnectionId": {
+            "type": "string",
+            "format": "uuid",
+            "readOnly": true
+          },
+          "serverVersion": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "state": {
+            "$ref": "#/components/schemas/ConnectionState"
+          },
+          "workstationId": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "credential": {
+            "$ref": "#/components/schemas/SqlCredential"
+          },
+          "fireInfoMessageEventOnUserErrors": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SqlCredential": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "$ref": "#/components/schemas/SecureString"
+          }
+        },
+        "additionalProperties": false
+      },
+      "User_Login_Information_Model": {
+        "type": "object",
+        "properties": {
+          "user_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "user_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "user_password": {
+            "type": "string",
+            "nullable": true
+          },
+          "user_confirm_password": {
+            "type": "string",
+            "nullable": true
+          },
+          "employee_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "created_by": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "created_date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updated_by": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "update_date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "attr1": {
+            "type": "string",
+            "nullable": true
+          },
+          "attr2": {
+            "type": "string",
+            "nullable": true
+          },
+          "attr3": {
+            "type": "string",
+            "nullable": true
+          },
+          "attr4": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

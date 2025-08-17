@@ -1,0 +1,585 @@
+[
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.ClientRegistrationController",
+    "Method": "GetClientData",
+    "RelativePath": "api/ClientRegistration",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.ClientRegistrationController",
+    "Method": "ClientPostData",
+    "RelativePath": "api/ClientRegistration",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "_1_Hospital_Managment_Model.Hospital_Managment_Model.Client_Registration_Model",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.ClientRegistrationController",
+    "Method": "DeleteData",
+    "RelativePath": "api/ClientRegistration",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.ClientRegistrationController",
+    "Method": "GetData",
+    "RelativePath": "api/ClientRegistration/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.ClientRegistrationController",
+    "Method": "GetByName",
+    "RelativePath": "api/ClientRegistration/GetByName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.DepartmentInformationController",
+    "Method": "Connect",
+    "RelativePath": "api/DepartmentInformation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Data.SqlClient.SqlConnection",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.DepartmentInformationController",
+    "Method": "Delete",
+    "RelativePath": "api/DepartmentInformation",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.DepartmentInformationController",
+    "Method": "PostDepartmentData",
+    "RelativePath": "api/DepartmentInformation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "_1_Hospital_Managment_Model.Hospital_Managment_Model.Department_Information_Model",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.DepartmentInformationController",
+    "Method": "GetDepartmentData",
+    "RelativePath": "api/DepartmentInformation/GetAllData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.DepartmentInformationController",
+    "Method": "GetById",
+    "RelativePath": "api/DepartmentInformation/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.DepartmentInformationController",
+    "Method": "GetByName",
+    "RelativePath": "api/DepartmentInformation/GetByName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.DesignationInformationController",
+    "Method": "Delete",
+    "RelativePath": "api/DesignationInformation",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.DesignationInformationController",
+    "Method": "PostDesignationData",
+    "RelativePath": "api/DesignationInformation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "_1_Hospital_Managment_Model.Hospital_Managment_Model.Designation_Information_Model",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.DesignationInformationController",
+    "Method": "GetDesignationData",
+    "RelativePath": "api/DesignationInformation/GetAllData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.DesignationInformationController",
+    "Method": "GetById",
+    "RelativePath": "api/DesignationInformation/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.DesignationInformationController",
+    "Method": "GetByNames",
+    "RelativePath": "api/DesignationInformation/GetByName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.EmployeeInformationController",
+    "Method": "GetAllData",
+    "RelativePath": "api/EmployeeInformation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.EmployeeInformationController",
+    "Method": "PostEmployeeData",
+    "RelativePath": "api/EmployeeInformation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "_1_Hospital_Managment_Model.Hospital_Managment_Model.Employee_Information_Model",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.EmployeeInformationController",
+    "Method": "Delete",
+    "RelativePath": "api/EmployeeInformation",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.HospitalInformationController",
+    "Method": "GetHospitalData",
+    "RelativePath": "api/HospitalInformation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.HospitalInformationController",
+    "Method": "PostHospitalData",
+    "RelativePath": "api/HospitalInformation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "_1_Hospital_Managment_Model.Hospital_Managment_Model.Hospital_Information_Model",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.HospitalInformationController",
+    "Method": "Delete",
+    "RelativePath": "api/HospitalInformation",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.ItemInformationController",
+    "Method": "GetAllData",
+    "RelativePath": "api/ItemInformation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.ItemInformationController",
+    "Method": "PostItemData",
+    "RelativePath": "api/ItemInformation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "_1_Hospital_Managment_Model.Hospital_Managment_Model.Item_Information_Model",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.MaterialTypeInfromationController",
+    "Method": "PostMaterialData",
+    "RelativePath": "api/MaterialTypeInfromation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "_1_Hospital_Managment_Model.Hospital_Managment_Model.Material_Type_Infromation_Model",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.MaterialTypeInfromationController",
+    "Method": "Delete",
+    "RelativePath": "api/MaterialTypeInfromation",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.MaterialTypeInfromationController",
+    "Method": "GetAllData",
+    "RelativePath": "api/MaterialTypeInfromation/GetAllData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.PackingController",
+    "Method": "GetAllData",
+    "RelativePath": "api/Packing",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.PackingController",
+    "Method": "PostPackingData",
+    "RelativePath": "api/Packing",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "_1_Hospital_Managment_Model.Hospital_Managment_Model.Packing_Model",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.PackingController",
+    "Method": "Delete",
+    "RelativePath": "api/Packing",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.PersonInformationController",
+    "Method": "PostPersonData",
+    "RelativePath": "api/PersonInformation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "_1_Hospital_Managment_Model.Hospital_Managment_Model.Person_Information_Model",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.PersonInformationController",
+    "Method": "Delete",
+    "RelativePath": "api/PersonInformation",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.PersonInformationController",
+    "Method": "GetAllData",
+    "RelativePath": "api/PersonInformation/GetAllData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.UserLoginController",
+    "Method": "PostUserData",
+    "RelativePath": "api/UserLogin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "_1_Hospital_Managment_Model.Hospital_Managment_Model.User_Login_Information_Model",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.UserLoginController",
+    "Method": "Delete",
+    "RelativePath": "api/UserLogin",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.UserLoginController",
+    "Method": "GetAllData",
+    "RelativePath": "api/UserLogin/GetAllData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hospital_Managment_Web_Api.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Hospital_Managment_Web_Api.WeatherForecast, Hospital_Managment_Web_Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
